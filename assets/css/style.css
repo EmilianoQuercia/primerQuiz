@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family:'Oswald', sans-serif ;
+}
+.tablero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cajaPregunta{
+   width: 80vw;
+   height: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+   border: 2px solid #000;
+   border-radius: 10px;
+   margin: 10px;
+   padding: 10px;
+   text-align: center;
+   font-size: 20px;
+}
+
+.cajaPregunta img{
+ 
+    height: 100px;
+    margin-top: 20px;
+}
+
+.correcto{
+    margin: 10px;  
+}
+.opcion{
+    width: 70vw;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 5px auto;
+    padding: 10px;
+    cursor: pointer;
+}
+.opcion:hover{
+    background-color: #868686
+}
+.reinicio{
+    width: 30%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}

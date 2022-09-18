@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tablero">
+        <div class="cajaPregunta" id="cajaPregunta">
+            <span id="pregunta">va la Pregunta</span> 
+            <img id="imagen" src="" alt="">
+            <span class="correcto" id="correcto">correcto</span>
+        </div>
+        <div class="opcion" id="opc1">opcion 1</div>
+        <div class="opcion" id="opc2">opcion 2</div>
+        <div class="opcion" id="opc3">opcion 3</div>
+        <div class="opcion" id="opc4">opcion 4</div>
+        <button class="reinicio" id="reiniciar">Reiniciar</button>
+    </div>
+
+    <!-- archivo que carga donde guardo mis preguntas -->
+    <script src="./assets/js/baseDatoPreguntas.js"></script>
+    <!-- archivo de la logica del juego -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
