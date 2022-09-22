@@ -8,18 +8,31 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="tablero">
+    <div id="pantallaInicio" class="inicio">
+        <h1 class="tituloPrincipal">"AbReCaBeZa"</h1>
+        <button id="comenzar" class="btnComenzar">Comenzar Juego</button>
+    </div>
+
+    <div id="pantallaJuego" class="tablero">
+        <div id="tiempo" class="reloj">🕐</div>
         <div class="cajaPregunta" id="cajaPregunta">
             <span id="pregunta">va la Pregunta</span> 
             <img id="imagen" src="" alt="">
             <span class="correcto" id="correcto">correcto</span>
         </div>
-        <div class="opcion" id="opc1">opcion 1</div>
-        <div class="opcion" id="opc2">opcion 2</div>
-        <div class="opcion" id="opc3">opcion 3</div>
-        <div class="opcion" id="opc4">opcion 4</div>
+        <button class="opcion" id="opc1">opcion 1</button>
+        <button class="opcion" id="opc2">opcion 2</button>
+        <button class="opcion" id="opc3">opcion 3</button>
+        <button class="opcion" id="opc4">opcion 4</button>
+        
+    </div>
+
+    <div id="pantallaFinal" class="final">
+        <h2 class="Puntos">PUNTUACIÓN</h2>
+        <p id="puntos" class="msjPuntos">Respuesta acertadas</p>
         <button class="reinicio" id="reiniciar">Reiniciar</button>
     </div>
+
 
     <!-- archivo que carga donde guardo mis preguntas -->
     <script src="./assets/js/baseDatoPreguntas.js"></script>

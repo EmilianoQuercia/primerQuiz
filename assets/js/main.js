@@ -1,33 +1,67 @@
 
 
-//variable para indicar que arranque de la primer pregunta
-let indicePregunta = 0
 //variable para saber cuantas respuestas correctas tenemos al final
 let puntaje = 0
 
+let timer;
+let tiempo = 60
+
 //todo lo que llamo de HTML
+let inicio = document.getElementById('pantallaInicio')
+let pantallaJuego = document.getElementById('pantallaJuego')
+let pantallaPuntos = document.getElementById('pantallaFinal')
+let botonComenzar = document.getElementById('comenzar')
 let spanPregunta = document.getElementById('pregunta')
-let divOpcion1 = document.getElementById('opc1')
-let divOpcion2 = document.getElementById('opc2')
-let divOpcion3 = document.getElementById('opc3')
-let divOpcion4 = document.getElementById('opc4')
+let btnOpcion1 = document.getElementById('opc1')
+let btnOpcion2 = document.getElementById('opc2')
+let btnOpcion3 = document.getElementById('opc3')
+let btnOpcion4 = document.getElementById('opc4')
 let imagen = document.getElementById('imagen')
 let msjRespuestas = document.getElementById('correcto')
 let btnReinicio = document.getElementById('reiniciar')
+let reloj = document.getElementById('tiempo')
+
+let puntos = document.getElementById('puntos')
+
+//indico que la pantallas pantallas no se vean
+pantallaJuego.style.display = 'none'
+pantallaPuntos.style.display = 'none'
+
+//cuando apreto el boton comenzar llama a la funcion cargar preguntas y empieza a correr el tiempo
+botonComenzar.addEventListener('click', ()=>{
+    cargarPregunta() 
+    timer = setInterval('restarTiempo()',1000)
+} )
 
 
-divOpcion1.addEventListener('click', ()=>seleccionarOpcion(0))
-divOpcion2.addEventListener('click', ()=>seleccionarOpcion(1))
-divOpcion3.addEventListener('click', ()=>seleccionarOpcion(2))
-divOpcion4.addEventListener('click', ()=>seleccionarOpcion(3))
+btnOpcion1.addEventListener('click', ()=>seleccionarOpcion(0))
+btnOpcion2.addEventListener('click', ()=>seleccionarOpcion(1))
+btnOpcion3.addEventListener('click', ()=>seleccionarOpcion(2))
+btnOpcion4.addEventListener('click', ()=>seleccionarOpcion(3))
 btnReinicio.addEventListener('click',reiniciar)
 
-function cargarPregunta(index){
-    btnReinicio.style.display = 'none'
+
+
+function cargarPregunta(){
+    //elegimos una pregunta al azar
+    let indicePregunta = Math.round(Math.random()*baseDatosPreguntas.length)
+
+    inicio.style.display = 'none'
+
+    if (tiempo != 0){
+        pantallaJuego.style.display = 'flex'
+    }
+    
+    btnOpcion1.disabled=false
+    btnOpcion2.disabled=false
+    btnOpcion3.disabled=false
+    btnOpcion4.disabled=false
+
+   
     msjRespuestas.innerHTML = ''
    
     //NOTA: genero variables sin let (objPregunta y opciones) para que sean globales y poder usarla en otras en funciones 
-    objPregunta = baseDatosPreguntas[index]
+    objPregunta = baseDatosPreguntas[indicePregunta]
 
     //guardo en opciones el array de otras opciones con el metodo spread (...)    
     opciones = [...objPregunta.otrasOpciones]
@@ -44,18 +78,24 @@ function cargarPregunta(index){
      imagen.src = objPregunta.imagen
    
     //imprimo las respuestas 
-    divOpcion1.innerHTML = opciones[0]
-    divOpcion2.innerHTML = opciones[1]
-    divOpcion3.innerHTML = opciones[2]
-    divOpcion4.innerHTML = opciones[3]
+    btnOpcion1.innerHTML = opciones[0]
+    btnOpcion2.innerHTML = opciones[1]
+    btnOpcion3.innerHTML = opciones[2]
+    btnOpcion4.innerHTML = opciones[3]
 
+
+    //borramos la pregunta que ya salio
+    baseDatosPreguntas.splice(indicePregunta,1)
 
 }
 
 
 function seleccionarOpcion(index){
-    //indice que aumenta de a uno cada vez que se selecciona una respuesta
-    indicePregunta++
+    btnOpcion1.disabled=true
+    btnOpcion2.disabled=true
+    btnOpcion3.disabled=true
+    btnOpcion4.disabled=true
+ 
     //chequeamos que la opcion elegida sea la correcta
     if(opciones[index] == objPregunta.respuesta){
         
@@ -63,39 +103,33 @@ function seleccionarOpcion(index){
         msjRespuestas.style.color = 'green'
         puntaje++
 
-        if (indicePregunta>= baseDatosPreguntas.length){
-            msjRespuestas.innerHTML = 'EXCELENTE'
-        }else{
-            //tiempo que esperamos para que se muestre el mensaje antes de cargar la proxima ronda
-            setTimeout(()=>cargarPregunta(indicePregunta), 2000)
-        }   
+        setTimeout(()=>cargarPregunta(), 1000)
+
     }else{
         
         msjRespuestas.innerHTML = `INCORRECTO. La respuesta es ${objPregunta.respuesta}`
         msjRespuestas.style.color = 'red'
-    
-        if (indicePregunta>= baseDatosPreguntas.length){
-            msjRespuestas.innerHTML = `INCORRECTO. La respuesta es ${objPregunta.respuesta}`
-        }else{
-            setTimeout(()=>cargarPregunta(indicePregunta), 2000)
-        }
+        setTimeout(()=>cargarPregunta(), 1000)
          
-    }
-    //tiempo que esperamos antes de que se muestre el mensaje final cuando no hay mas preguntas
-    setTimeout(()=>{
-        if(indicePregunta>= baseDatosPreguntas.length){
-            msjRespuestas.style.color = 'black'
-            msjRespuestas.innerHTML = 'FIN DEL JUEGO'
-            setTimeout(()=>{ msjRespuestas.innerHTML  = `Tu puntaje es de ${puntaje}/${baseDatosPreguntas.length} respuestas acertadas`},1000)
-            
-            btnReinicio.style.display = 'block'
-        }
-    },2000)
-   
+    }  
 }
+
+function restarTiempo(){
+    tiempo--
+
+    reloj.innerHTML = tiempo
+
+    if (tiempo == 0){
+        clearInterval(timer)
+        pantallaJuego.style.display = 'none'
+        pantallaPuntos.style.display = 'flex'
+      
+        puntos.innerHTML =`Respuestas acertadas ${puntaje}`
+    }   
+}
+
 
 function reiniciar(){
     location.reload()
 }
 
-cargarPregunta(indicePregunta)
