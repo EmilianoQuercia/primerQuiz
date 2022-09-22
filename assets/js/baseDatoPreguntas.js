@@ -74,7 +74,7 @@ const baseDatosPreguntas= [
     },
     {
         pregunta: '¿Que personaje utilizaba sus flechas con fines amorosos"? ',
-        imagen: './assets/img/historia.jpg',
+        imagen: './assets/img/Historia.jpg',
         respuesta: 'CUPIDO',
         otrasOpciones: ['ROBIN HOOD','FLECHA VERDE','OJO DE ALCÓN']
     },
@@ -110,7 +110,7 @@ const baseDatosPreguntas= [
     },
     {
         pregunta: '¿Como murió Adolf Hitler? ',
-        imagen: './assets/img/historia.jpg',
+        imagen: './assets/img/Historia.jpg',
         respuesta: 'SE SUICIDO EN SU BUNKER',
         otrasOpciones: ['LO ASESINARON SUS OFICIALES','LO ENVENENARON','TUVO UN ACCIDENTE']
     },
@@ -128,13 +128,13 @@ const baseDatosPreguntas= [
     },
     {
         pregunta: '¿Que cantidad de Muertes provocó la Segunda Guerra Mundial? ',
-        imagen: './assets/img/historia.jpg',
+        imagen: './assets/img/Historia.jpg',
         respuesta: '55 MILLONES',
         otrasOpciones: ['27 MILLONES','35 MILLONES','10 MILLONES']
     },
     {
         pregunta: '¿Quien era el Dios del Amor segun la mitologia Griega? ',
-        imagen: './assets/img/historia.jpg',
+        imagen: './assets/img/Historia.jpg',
         respuesta: 'EROS',
         otrasOpciones: ['CUPIDO','VENUS','ZEUS']
     },
@@ -146,7 +146,7 @@ const baseDatosPreguntas= [
     },
     {
         pregunta: 'El Emperador Caligula nombro cónsul a un animal, ¿a cual? ',
-        imagen: './assets/img/historia.jpg',
+        imagen: './assets/img/Historia.jpg',
         respuesta: 'A SU CABALLO',
         otrasOpciones: ['A SU PERRO','A SU GATO','A SU LORO']
     },
@@ -248,13 +248,13 @@ const baseDatosPreguntas= [
     },
     {
         pregunta: '¿En que año inicio la primera Guerra Mundial?',
-        imagen: './assets/img/historia.jpg',
+        imagen: './assets/img/Historia.jpg',
         respuesta: '1914',
         otrasOpciones: ['1918','1912','1917']
     },
     {
         pregunta: 'En que año el hombre piso la luna por primera vez',
-        imagen: './assets/img/historia.jpg',
+        imagen: './assets/img/Historia.jpg',
         respuesta: '1969',
         otrasOpciones: ['1965','1986','1973']
     },
@@ -272,13 +272,13 @@ const baseDatosPreguntas= [
     },
     {
         pregunta: '¿cuantos años vivio la persona mas vieja del mundo?',
-        imagen: './assets/img/historia.jpg',
+        imagen: './assets/img/Historia.jpg',
         respuesta: '128 AÑOS',
         otrasOpciones: ['125 AÑOS','133 AÑOS','119 AÑOS']
     },
     {
         pregunta: '¿quien invento el secador de pelo?',
-        imagen: './assets/img/historia.jpg',
+        imagen: './assets/img/Historia.jpg',
         respuesta: 'ALEXANDRE GODEFOY',
         otrasOpciones: ['LEONARDO DA VINCI','ALBERT EINSTEIN','JACOB SCHICK']
     },
