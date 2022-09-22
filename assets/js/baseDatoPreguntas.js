@@ -55,7 +55,7 @@ const baseDatosPreguntas= [
         otrasOpciones: ['SELENIO','SILICIO','ARSENIO']
     },
     {
-        pregunta: '¿Cuantas cuerdas tiene un arpa ',
+        pregunta: '¿Cuantas cuerdas tiene un Arpa ',
         imagen: './assets/img/arte.jpg',
         respuesta: '47',
         otrasOpciones: ['36','42','50']
@@ -127,7 +127,7 @@ const baseDatosPreguntas= [
         otrasOpciones: ['INGLES','ESPAÑOL','PORTUGUES']
     },
     {
-        pregunta: '¿Que cantidad de Muertes provocó la segunda guerra mundial? ',
+        pregunta: '¿Que cantidad de Muertes provocó la Segunda Guerra Mundial? ',
         imagen: './assets/img/historia.jpg',
         respuesta: '55 MILLONES',
         otrasOpciones: ['27 MILLONES','35 MILLONES','10 MILLONES']
@@ -229,7 +229,7 @@ const baseDatosPreguntas= [
         otrasOpciones: ['BERNARDO','GUTIERREZ','KATO']
     },
     {
-        pregunta: '¿Que grupo dee musica fue autor de "La Biblia"?',
+        pregunta: '¿Que grupo de musica fue autor de "La Biblia"?',
         imagen: './assets/img/arte.jpg',
         respuesta: 'VOX DEI',
         otrasOpciones: ['SERU GIRAN','SUI GENERIS','SUMO']
