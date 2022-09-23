@@ -15,6 +15,7 @@ body{
     font-family:'Oswald', sans-serif ;
 }
 .inicio{
+    /* display: none; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,9 +33,43 @@ body{
     border: 3px solid #000;
     border-radius: 15px;
 }
+.registro{
+    background-color:rgb(76, 199, 236);
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+}
+.divRegistro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    /* width: 100%; */
+}
+.nombre{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.inputUsuario{
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;  
+    padding: 5px; 
+    text-align: center;
+    width:100% ;
+}
+
+.h4Registro{
+    text-align: center;
+}
 
 .tablero{
-    
+    /* display: none; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,8 +129,23 @@ body{
     border-radius: 10px;
 }
 
+.puntos{
+    text-align: center;
+    margin: 10px;
+}
+.tablaPuntos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 20px;
+    margin: 10px;
+}
+.msjNombre{
+    text-align: center;
+}
 .msjPuntos{
-    margin: 20px;
+    text-align: center;
+    width: 80px;
 }
 
 .reinicio{
@@ -109,6 +159,11 @@ body{
     .tituloPrincipal{
         font-size: 45px;
     }
+
+    .registro{
+        width: 85%;  
+    }
+
     .cajaPregunta img{
         height: 60px;
         margin-top: 5px;

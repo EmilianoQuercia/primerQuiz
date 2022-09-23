@@ -8,11 +8,29 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- pantalla de inicio -->
     <div id="pantallaInicio" class="inicio">
         <h1 class="tituloPrincipal">"AbReCaBeZa"</h1>
+        <button id="jugar" class="btnComenzar">JUGAR</button>
+    </div>
+
+    <!-- pantalla de registro -->
+
+    <div id="pantallaRegistro" class="registro">
+        <div class="divRegistro">
+            <h3 class="nombre">Ingrese su Nombre</h3>
+            <input type="text" name="usuario" id="usuario" class="inputUsuario">
+        </div>
+        <h4 class="h4Registro">INDICACIONES DEL JUEGO</h4>
+        <p>- Tienes 30 seg para responder</p>
+        <p>- Elija la respuesta correcta para sumar puntos</p>
+        <p>- Por cada respuesta correcta se aumentara el tiempo 2 segundos</p>
+        <p>- Por cada respuesta incorrecta perdera 2 segundos</p>
+        <h4 class="h4Registro">BUENA SUERTE!!!!</h4>
         <button id="comenzar" class="btnComenzar">Comenzar Juego</button>
     </div>
 
+    <!-- pantalla de preguntas -->
     <div id="pantallaJuego" class="tablero">
         <div id="tiempo" class="reloj">🕐</div>
         <div class="cajaPregunta" id="cajaPregunta">
@@ -27,9 +45,20 @@
         
     </div>
 
+    <!-- pantalla de puntuacion final -->
     <div id="pantallaFinal" class="final">
-        <h2 class="Puntos">PUNTUACIÓN</h2>
-        <p id="puntos" class="msjPuntos">Respuesta acertadas</p>
+        <h2 class="puntos">TABLA MEJORES PUNTAJES</h2>
+        <p id="puntos" class="msj">Respuesta acertadas</p>
+
+        <div class="tablaPuntos">
+            <p>JUGADOR</p>
+            <p>PUNTAJE</p>
+        </div>
+        <div class="tablaPuntos">
+            <p id="nombreGuardados" class="msjNombre"></p>
+            <p id="puntosGuardados" class="msjPuntos"></p>
+        </div>
+
         <button class="reinicio" id="reiniciar">Reiniciar</button>
     </div>
 

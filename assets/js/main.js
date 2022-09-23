@@ -4,12 +4,16 @@
 let puntaje = 0
 
 let timer;
-let tiempo = 60
+let tiempo = 30
+
 
 //todo lo que llamo de HTML
 let inicio = document.getElementById('pantallaInicio')
+let pantallaRegistro = document.getElementById('pantallaRegistro')
 let pantallaJuego = document.getElementById('pantallaJuego')
+let usuario = document.getElementById('usuario')
 let pantallaPuntos = document.getElementById('pantallaFinal')
+let btnJugar = document.getElementById('jugar')
 let botonComenzar = document.getElementById('comenzar')
 let spanPregunta = document.getElementById('pregunta')
 let btnOpcion1 = document.getElementById('opc1')
@@ -22,10 +26,18 @@ let btnReinicio = document.getElementById('reiniciar')
 let reloj = document.getElementById('tiempo')
 
 let puntos = document.getElementById('puntos')
+let nombreGuardados = document.getElementById('nombreGuardados')
+let puntosGuardados = document.getElementById('puntosGuardados')
 
 //indico que la pantallas pantallas no se vean
 pantallaJuego.style.display = 'none'
 pantallaPuntos.style.display = 'none'
+pantallaRegistro.style.display = 'none'
+
+btnJugar.addEventListener('click', ()=>{
+    inicio.style.display= 'none'
+    pantallaRegistro.style.display = 'flex'
+})
 
 //cuando apreto el boton comenzar llama a la funcion cargar preguntas y empieza a correr el tiempo
 botonComenzar.addEventListener('click', ()=>{
@@ -46,7 +58,7 @@ function cargarPregunta(){
     //elegimos una pregunta al azar
     let indicePregunta = Math.round(Math.random()*baseDatosPreguntas.length)
 
-    inicio.style.display = 'none'
+    pantallaRegistro.style.display = 'none'
 
     if (tiempo != 0){
         pantallaJuego.style.display = 'flex'
@@ -102,14 +114,16 @@ function seleccionarOpcion(index){
         msjRespuestas.innerHTML = 'EXCELENTE!!!!'
         msjRespuestas.style.color = 'green'
         puntaje++
+        //si responde bien le suma 4 segundos de tiempo como un premio
+        tiempo +=4
 
-        setTimeout(()=>cargarPregunta(), 1000)
+        setTimeout(()=>cargarPregunta(), 2000)
 
     }else{
         
         msjRespuestas.innerHTML = `INCORRECTO. La respuesta es ${objPregunta.respuesta}`
         msjRespuestas.style.color = 'red'
-        setTimeout(()=>cargarPregunta(), 1000)
+        setTimeout(()=>cargarPregunta(), 2000)
          
     }  
 }
@@ -123,10 +137,52 @@ function restarTiempo(){
         clearInterval(timer)
         pantallaJuego.style.display = 'none'
         pantallaPuntos.style.display = 'flex'
-      
-        puntos.innerHTML =`Respuestas acertadas ${puntaje}`
+        
+        mostrarPuntajeFinal();
+        guardarPuntos(puntaje,usuario.value);
+        pintarPuntaje()
     }   
 }
+
+function mostrarPuntajeFinal(){
+    return puntos.innerHTML =` JUGADOR: ${usuario.value} -- PUNTOS: ${puntaje} `   
+}
+let tablaPuntos = []
+function guardarPuntos(puntos,usuario){
+
+    if (JSON.parse(localStorage.getItem('tabla'))){
+        tablaPuntos = JSON.parse(localStorage.getItem('tabla'))
+    }
+    
+    let datosJugador = {puntaje:puntos, Jugador:usuario}
+
+    tablaPuntos.push(datosJugador)
+
+    mejorPuntaje = tablaPuntos.sort((a,b)=> b.puntaje-a.puntaje)
+
+    if (mejorPuntaje.length>5){
+        mejorPuntaje.pop()
+    }
+
+    const enJSON = JSON.stringify(mejorPuntaje)
+    localStorage.setItem('tabla',enJSON)
+
+}
+
+
+
+function pintarPuntaje(){
+
+
+    pintarTabla = JSON.parse(localStorage.getItem('tabla'))
+    
+    pintarTabla.forEach(punto => {
+        nombreGuardados.innerHTML += `<span>${punto.Jugador}</span> <br>`, 
+        puntosGuardados.innerHTML += `<span>${punto.puntaje}</span> <br>`
+    })
+        
+}
+
 
 
 function reiniciar(){
