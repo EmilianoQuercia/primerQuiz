@@ -5,6 +5,7 @@ let puntaje = 0
 
 let timer;
 let tiempo = 30
+let tablaPuntos = []
 
 
 //todo lo que llamo de HTML
@@ -147,7 +148,8 @@ function restarTiempo(){
 function mostrarPuntajeFinal(){
     return puntos.innerHTML =` JUGADOR: ${usuario.value} -- PUNTOS: ${puntaje} `   
 }
-let tablaPuntos = []
+
+
 function guardarPuntos(puntos,usuario){
 
     if (JSON.parse(localStorage.getItem('tabla'))){
