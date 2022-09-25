@@ -195,7 +195,7 @@ const baseDatosPreguntas= [
     {
         id:25,
         rubro: 'television',
-        pregunta: '¿Que altero el organismo del DR David Banner?',
+        pregunta: '¿Que alteró el organismo del DR David Banner?',
         imagen: './assets/img/television.jpg',
         respuesta: 'RAYOS GAMA',
         otrasOpciones: ['LA ESPINACA','UNA PASTILLA','KRYPTONITA']
@@ -642,6 +642,175 @@ const baseDatosPreguntas= [
         otrasOpciones: ['EXODO','LEVITICO','APOCALIPSIS']
     },
     {
+        id:1030,
+        rubro: 'arte',
+        pregunta: '¿Que obra de Shakespeare transcurre en Verona?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'ROMEO Y JULIETA',
+        otrasOpciones: ['OTELO','EL REY LEAR','LA TEMPESTAD']
+    },
+    {
+        id:1031,
+        rubro: 'arte',
+        pregunta: '¿De que origen era el pintor Rembrandt?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'HOLANDES',
+        otrasOpciones: ['BELGA','FRANCES','ITALIANO']
+    },
+    {
+        id:1032,
+        rubro: 'arte',
+        pregunta: '¿Cuantas eran, en una novela de Julio Verne, las leguas de viaje submarino ?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: '20 MIL',
+        otrasOpciones: ['30 MIL','10 MIL','5 MIL']
+    },
+    {
+        id:1033,
+        rubro: 'arte',
+        pregunta: '¿A que edad murio Elvis Presley?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: '42 AÑOS',
+        otrasOpciones: ['32 AÑOS','28 AÑOS','40 AÑOS']
+    },
+    {
+        id:1034,
+        rubro: 'arte',
+        pregunta: '¿En que Ciudad murio Manuel de Falla?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'ALTA GRACIA',
+        otrasOpciones: ['MENDOZA','SEVILLA','BS AS']
+    },
+    {
+        id:1035,
+        rubro: 'arte',
+        pregunta: '¿El "Kama Sutra" es de origen...?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'HINDU',
+        otrasOpciones: ['PERSA','CHINO','JAPONES']
+    },
+    {
+        id:1036,
+        rubro: 'arte',
+        pregunta: '¿Quienes crearon "El ritual de la banana"?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'LOS PERICOS',
+        otrasOpciones: ['PARALAMAS','FABULOSOS CADILLACS','CALIGARIS']
+    },
+    {
+        id:1037,
+        rubro: 'arte',
+        pregunta: 'En Musica ¿A cuantas blancas equivale una redonda?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'A DOS',
+        otrasOpciones: ['A UNA','A CUATRO','A OCHO']
+    },
+    {
+        id:1038,
+        rubro: 'arte',
+        pregunta: '¿Cuantas cuerdas tiene la bandurria?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'DOCE',
+        otrasOpciones: ['OCHO','SEIS','DIEZ']
+    },
+    {
+        id:1039,
+        rubro: 'arte',
+        pregunta: '¿Que famoso escritor argentino nacio en Belgica?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'JULIO CORTAZAR',
+        otrasOpciones: ['ERNESTO SABATO','JORGE LUIS BORGES','ADOLFO BIOY CASARES']
+    },
+    {
+        id:1040,
+        rubro: 'arte',
+        pregunta: '¿Segun Mario Benedetti, "en la calle codo a codo somos mucho mas que..."?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'QUE DOS',
+        otrasOpciones: ['QUE DIOS','QUE EL SOL','QUE YO']
+    },
+    {
+        id:1041,
+        rubro: 'arte',
+        pregunta: '¿Que instrumento sabia tocar Julio Cortázar?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'LA TROMPETA',
+        otrasOpciones: ['LA GUITARRA','EL PIANO','EL BANDONEON']
+    },
+    {
+        id:1042,
+        rubro: 'arte',
+        pregunta: '¿Pappo advierte que nadie se atreva a tocar a su...?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'SU VIEJA',
+        otrasOpciones: ['SU AUTO','SU GUITARRA','SU NOVIA']
+    },
+    {
+        id:1043,
+        rubro: 'arte',
+        pregunta: '¿Que musico argentino hizo una cancion usando solamente palabras con la vocal "O"?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'LEON GIECO',
+        otrasOpciones: ['IGNACIO COPANI','HORACIO FONTOVA','HUGO VARELA']
+    },
+    {
+        id:1044,
+        rubro: 'arte',
+        pregunta: '¿Quien escribio el "Apocalipsis"?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'SAN JUAN',
+        otrasOpciones: ['JESUS','SAN MATEO','SAN LUCAS']
+    },
+    {
+        id:1045,
+        rubro: 'arte',
+        pregunta: '¿Cuantas novelas escribió Jorge Luis Borges?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'NINGUNA',
+        otrasOpciones: ['UNA','DOS','CINCO']
+    },
+    {
+        id:1046,
+        rubro: 'arte',
+        pregunta: 'EL pintor Utrillo, ¿era..?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'FRANCES',
+        otrasOpciones: ['ESPAÑOL','MEXICANO','ITALIANO']
+    },
+    {
+        id:1047,
+        rubro: 'arte',
+        pregunta: '¿Que incapacidad tiene el cantante Jose Feliciano?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'ES CIEGO',
+        otrasOpciones: ['ES SORDO','ES PARALITICO','ES MUDO']
+    },
+    {
+        id:1048,
+        rubro: 'arte',
+        pregunta: '¿Que legendaria estrella del Rock fallecio el 16 de agosto de 1977?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'ELVIS PRESLEY',
+        otrasOpciones: ['JANIS JOPLIN','JONH LENNON','FREDDY MERCURY']
+    },
+    {
+        id:1049,
+        rubro: 'arte',
+        pregunta: '¿Cuantas llaves tiene una trompeta?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'TRES',
+        otrasOpciones: ['CINCO','OCHO','NINGUNA']
+    },
+    {
+        id:1050,
+        rubro: 'arte',
+        pregunta: '¿Cuantas veces fue robada del Louvre "La Gioconda"?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'UNA',
+        otrasOpciones: ['DOS','TRES','NINGUNA']
+    },
+
+    {
         id:2000,
         rubro: 'geografia',
         pregunta: '¿cual es la montaña mas alta del mundo?',
@@ -707,6 +876,54 @@ const baseDatosPreguntas= [
     },
     {
         id:2008,
+        rubro: 'geografia',
+        pregunta: '¿Cual es el rio mas largo del Mundo?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'AMAZONA',
+        otrasOpciones: ['NILO','MISISIPI','CONGO']
+    },
+    {
+        id:2009,
+        rubro: 'geografia',
+        pregunta: '¿Que provincia Argentina es la principal productora de Yerba Mate?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'MISIONES',
+        otrasOpciones: ['CORRIENTES','FORMOSA','ENTRE RIOS']
+    },
+    {
+        id:2010,
+        rubro: 'geografia',
+        pregunta: '¿Cual es la provincia mas extensa de la argentina?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'BUENOS AIRES',
+        otrasOpciones: ['CORDOBA','SANTA CRUZ','CATAMARCA']
+    },
+    {
+        id:2011,
+        rubro: 'geografia',
+        pregunta: '¿A que pais se suele llamar "La Suiza de America"?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'URUGUAY',
+        otrasOpciones: ['CANADA','ECUADOR','PANAMA']
+    },
+    {
+        id:2012,
+        rubro: 'geografia',
+        pregunta: '¿Que río separa las provincias de La Pampa y Rio Negro?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'EL RIO COLORADO',
+        otrasOpciones: ['EL RIO NEGRO','RIO SUQUIA','RIO URUGUAY']
+    },
+    {
+        id:2013,
+        rubro: 'geografia',
+        pregunta: 'Si usted visita las ruinas de la ciudad romana de Itálica ¿en que pais se encuetra?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'ESPAÑA',
+        otrasOpciones: ['ITALIA','FRANCIA','ALBANIA']
+    },
+    {
+        id:2014,
         rubro: 'geografia',
         pregunta: '¿Cual es el rio mas largo del Mundo?',
         imagen: './assets/img/geografia.jpg',
