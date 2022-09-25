@@ -320,6 +320,86 @@ const baseDatosPreguntas= [
         respuesta: 'MELMAC',
         otrasOpciones: ['ORK','MARTE','JUPITER']
     },
+    {
+        id:41,
+        rubro: 'television',
+        pregunta: '¿En que pelicula Cameron diaz hace perder la cabeza a Jim Carrey?',
+        imagen: './assets/img/television.jpg',
+        respuesta: 'LA MASCARA',
+        otrasOpciones: ['ACE VENTURA','MENTIROSO MENTIROSO','DICK Y JANE']
+    },
+    {
+        id:42,
+        rubro: 'television',
+        pregunta: '¿En que pelicula Al Pacino baila un tango?',
+        imagen: './assets/img/television.jpg',
+        respuesta: 'PERFUME DE MUJER',
+        otrasOpciones: ['SCARFACE','EL PADRINO','EL IRLANDES']
+    },
+    {
+        id:43,
+        rubro: 'television',
+        pregunta: '¿Que famosa actriz se desnuda en la pelicula "Striptease"?',
+        imagen: './assets/img/television.jpg',
+        respuesta: 'DEMI MOORE',
+        otrasOpciones: ['CAMERON DIAZ','KIM BASINGER','SHARON STONE']
+    },
+    {
+        id:44,
+        rubro: 'television',
+        pregunta: '¿Quien es Duro de Matar?',
+        imagen: './assets/img/television.jpg',
+        respuesta: 'BRUCE WILLIS',
+        otrasOpciones: ['SYLVESTER STALLONE','VAN DAMME','SCHWARZENEGGER']
+    },
+    {
+        id:45,
+        rubro: 'television',
+        pregunta: '¿Quien interpreta al Acertijo en "Batman Forever"?',
+        imagen: './assets/img/television.jpg',
+        respuesta: 'JIM CARREY',
+        otrasOpciones: ['JACK NICOLSON','TOMMY LEE JONES','SCHWARZENEGGER']
+    },
+    {
+        id:46,
+        rubro: 'television',
+        pregunta: '¿Como se llama el perro de tintin?',
+        imagen: './assets/img/television.jpg',
+        respuesta: 'MILU',
+        otrasOpciones: ['ASTRO','DINO','FIRU']
+    },
+    {
+        id:47,
+        rubro: 'television',
+        pregunta: '¿Como se llama el Gato del malo de los Pitufos?',
+        imagen: './assets/img/television.jpg',
+        respuesta: 'ASRAEL',
+        otrasOpciones: ['ASMAL','GARGAMEL','GATURRO']
+    },
+    {
+        id:48,
+        rubro: 'television',
+        pregunta: '¿De que origen era Tony, el personaje de Al Pacino en "Scarface"?',
+        imagen: './assets/img/television.jpg',
+        respuesta: 'CUBANO',
+        otrasOpciones: ['COLOMBIANO','ITALIANO','FRANCES']
+    },
+    {
+        id:49,
+        rubro: 'television',
+        pregunta: '¿A quien cuida Jon Bonachon?',
+        imagen: './assets/img/television.jpg',
+        respuesta: 'GARFIELD',
+        otrasOpciones: ['SILVESTRE','TOM','GATURRO']
+    },
+    {
+        id:50,
+        rubro: 'television',
+        pregunta: '¿Que animal era el personaje de la serie "Flipper"?',
+        imagen: './assets/img/television.jpg',
+        respuesta: 'DELFIN',
+        otrasOpciones: ['ORCA','BALLENA','FOCA']
+    },
 
     {
         id:1000,
@@ -433,7 +513,134 @@ const baseDatosPreguntas= [
         respuesta: 'INGLATERRA',
         otrasOpciones: ['SUECIA','IRLANDA','SUIZA']
     },
-
+    {
+        id:1014,
+        rubro: 'arte',
+        pregunta: '¿Donde nacio el Bolero?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'CUBA',
+        otrasOpciones: ['PUERTO RICO','MEXICO','VENEZUELA']
+    },
+    {
+        id:1015,
+        rubro: 'arte',
+        pregunta: 'En que pais nacio Luis MIguel"?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'PUERTO RICO',
+        otrasOpciones: ['MEXICO','PANAMA','COSTA RICA']
+    },
+    {
+        id:1016,
+        rubro: 'arte',
+        pregunta: 'En la opera de Verdi ¿Aída era una...?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'ESCLAVA',
+        otrasOpciones: ['PRINCESA','SIRVIENTE','REINA']
+    },
+    {
+        id:1017,
+        rubro: 'arte',
+        pregunta: '¿Con que nombre es mas conocida la pintura a base de poliester?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'ACRILICO',
+        otrasOpciones: ['PASTEL','OLEO','TEMPERA']
+    },
+    {
+        id:1018,
+        rubro: 'arte',
+        pregunta: '¿Con que famoso pintor estuvo casada Frida Kahlo?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'DIEGO RIVERA',
+        otrasOpciones: ['PABLO PICASSO','DAVID SIQUEIROS','SALVADOR DALI']
+    },
+    {
+        id:1019,
+        rubro: 'arte',
+        pregunta: '¿Cual fue el ultimo tango que canto Gardel?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'TOMO Y OBLIGO',
+        otrasOpciones: ['ADIOS MUCHACHOS','MELODIA DE ARRABAL','POR UNA CABEZA']
+    },
+    {
+        id:1020,
+        rubro: 'arte',
+        pregunta: '¿En que provincia Argenrina nació Mercedes Sosa?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'TUCUMAN',
+        otrasOpciones: ['SANTIAGO DEL ESTERO','SALTA','BUENOS AIRES']
+    },
+    {
+        id:1021,
+        rubro: 'arte',
+        pregunta: '¿Quien pinto la Gioconda con Bigotes?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'MARCEL DUCHAMP',
+        otrasOpciones: ['PABLO PICASSO','ANDY WARHOL','SALVADOR DALI']
+    },
+    {
+        id:1022,
+        rubro: 'arte',
+        pregunta: ' En 1972 un loco averió a martillazos una inmortal escultura de Miguel Angel ¿Cual?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'LA PIEDAD',
+        otrasOpciones: ['EL DAVID','EL MOISES','ESCLAVO REBELDE']
+    },
+    {
+        id:1023,
+        rubro: 'arte',
+        pregunta: '¿Para que instrumento es la sonata "Appassionata" de Beethoven?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'PIANO',
+        otrasOpciones: ['VIOLIN','CELLO','CLARINETE']
+    },
+    {
+        id:1024,
+        rubro: 'arte',
+        pregunta: '¿Cuantos versos tiene un soneto?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: '14',
+        otrasOpciones: ['18','20','26']
+    },
+    {
+        id:1025,
+        rubro: 'arte',
+        pregunta: '¿Donde se cayo la novia de "Los Fabulosos Cadillacs "?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'A UN POZO CIEGO',
+        otrasOpciones: ['EN LA CALLE','AL PRECIPICIO','AL AGUA']
+    },
+    {
+        id:1026,
+        rubro: 'arte',
+        pregunta: '¿Cual es el primer tema que grabaron Los Gatos, la banda de Lito Nebia?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'LA BALSA',
+        otrasOpciones: ['REBELDE','AYER NOMAS','EL REY LLORO']
+    },
+    {
+        id:1027,
+        rubro: 'arte',
+        pregunta: '¿En que pais esta la mayor coleccion de obras de Picasso?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'FRANCIA',
+        otrasOpciones: ['ESPAÑA','ITALIA','EE UU']
+    },
+    {
+        id:1028,
+        rubro: 'arte',
+        pregunta: '¿Que genero musical se considera que deriba del Rag-time?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'EL JAZZ',
+        otrasOpciones: ['EL REGGAE','EL BOSANOVA','EL CHARLESTON']
+    },
+    {
+        id:1029,
+        rubro: 'arte',
+        pregunta: '¿Cual es el primer libro del Antiguo testamento?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'GENESIS',
+        otrasOpciones: ['EXODO','LEVITICO','APOCALIPSIS']
+    },
     {
         id:2000,
         rubro: 'geografia',
