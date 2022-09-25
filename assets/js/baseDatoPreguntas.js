@@ -214,7 +214,7 @@ const baseDatosPreguntas= [
         pregunta: '¿Que podia hacer ET cuando se le iluiminaba el dedo?',
         imagen: './assets/img/television.jpg',
         respuesta: 'CURAR',
-        otrasOpciones: ['LLAMAR A SU CASA','VER EN LA OSCURIDAD','COMINICARSE']
+        otrasOpciones: ['LLAMAR A SU CASA','VER EN LA OSCURIDAD','COMUNICARSE']
     },
     {
         id:28,
@@ -524,7 +524,7 @@ const baseDatosPreguntas= [
     {
         id:1015,
         rubro: 'arte',
-        pregunta: 'En que pais nacio Luis MIguel"?',
+        pregunta: 'En que pais nacio Luis Miguel"?',
         imagen: './assets/img/arte.jpg',
         respuesta: 'PUERTO RICO',
         otrasOpciones: ['MEXICO','PANAMA','COSTA RICA']
@@ -953,6 +953,150 @@ const baseDatosPreguntas= [
         imagen: './assets/img/ciencia.jpg',
         respuesta: 'MERCURIO',
         otrasOpciones: ['PLUTONIO','KRYPTONITA','AZUFRE']
+    },
+    {
+        id:3003,
+        rubro:'ciencia',
+        pregunta: '¿A cuantos grados hierve el agua? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: '100°',
+        otrasOpciones: ['99°','98°','110°']
+    },
+    {
+        id:3004,
+        rubro:'ciencia',
+        pregunta: '¿En que estacion del año nacen los Osos? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'INVIERNO',
+        otrasOpciones: ['OTOÑO','PRIMAVERA','VERANO']
+    },
+    {
+        id:3005,
+        rubro:'ciencia',
+        pregunta: '¿Que son Vega, Capella, Arturo y Proción? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'ESTRELLAS',
+        otrasOpciones: ['MARIPOSAS','AMAPOLAS','CANTANTES']
+    },
+    {
+        id:3006,
+        rubro:'ciencia',
+        pregunta: '¿Cuantos Ceros tiene un Cuatrillon? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'VEINTICUATRO',
+        otrasOpciones: ['NUEVE','DOCE','DIECIOCHO']
+    },
+    {
+        id:3007,
+        rubro:'ciencia',
+        pregunta: '¿A que temperatura se hace sólido el Aceite de Oliva? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: '0°',
+        otrasOpciones: ['-5°','-10°','-30°']
+    },
+    {
+        id:3008,
+        rubro:'ciencia',
+        pregunta: '¿De que color son las flores del Brocoli? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'AMARILLAS',
+        otrasOpciones: ['AZULES','ROSAS','ROJAS']
+    },
+    {
+        id:3009,
+        rubro:'ciencia',
+        pregunta: '¿De que se alimentan los animales Coprófagos? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'ESCREMENTO',
+        otrasOpciones: ['RAICES','CARROÑA','SEMILLAS']
+    },
+    {
+        id:3010,
+        rubro:'ciencia',
+        pregunta: '¿Con que suelen fabricarse las agujas del tocadisco? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'DIAMANTE',
+        otrasOpciones: ['ACERO','IMAN','VIDRIO']
+    },
+    {
+        id:3011,
+        rubro:'ciencia',
+        pregunta: '¿En que pais funciono la primera Central Electrica Nuclear? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'EE UU',
+        otrasOpciones: ['UNION SOVIETICA','JAPON','CHINA']
+    },
+    {
+        id:3012,
+        rubro:'ciencia',
+        pregunta: '¿En que siglo se observaron por primera vez espermatozoides en un microscopio? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'SIGLO XVII',
+        otrasOpciones: ['SIGLO XX','SIGLO XIX','SIGLO XVIII']
+    },
+    {
+        id:3013,
+        rubro:'ciencia',
+        pregunta: '¿Cuantas vueltas alrededor del Sol da la Luna en un año? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'UNA',
+        otrasOpciones: ['SEIS','DOCE','VEINTICUATRO']
+    },
+    {
+        id:3014,
+        rubro:'ciencia',
+        pregunta: '¿Que se fabrica con arena, cal, carbonato de sodio y oxido de plomo? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'VIDRIO',
+        otrasOpciones: ['PLASTICO','CEMENTO','LADRILLO']
+    },
+    {
+        id:3015,
+        rubro:'ciencia',
+        pregunta: '¿Que particularidad tiene las arandelas "GROWER"? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'ESTAN PARTIDAS',
+        otrasOpciones: ['SON CUADRADAS','SON DE GOMA','SON DE PLASTICO']
+    },
+    {
+        id:3016,
+        rubro:'ciencia',
+        pregunta: '¿Cuántas mandíbulas tiene el erizo de mar? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'CINCO',
+        otrasOpciones: ['UNA','DOS','TRES']
+    },
+    {
+        id:3017,
+        rubro:'ciencia',
+        pregunta: '¿Que pila es mas grande en tamaño? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'D',
+        otrasOpciones: ['AAA','AA','C']
+    },
+    {
+        id:3018,
+        rubro:'ciencia',
+        pregunta: '¿De que continente es originario el Tucan? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'AMERICA',
+        otrasOpciones: ['ASIA','OCEANIA','AFRICA']
+    },
+    {
+        id:3019,
+        rubro:'ciencia',
+        pregunta: '¿De que continente es originario el Ajo? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'ASIA',
+        otrasOpciones: ['EUROPA','AMERICA','AFRICA']
+    },
+    {
+        id:3020,
+        rubro:'ciencia',
+        pregunta: '¿De que continente es originario el Garbanzo? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'EUROPA',
+        otrasOpciones: ['ASIA','AMERICA','OCEANIA']
     },
     {
         id:4000,
