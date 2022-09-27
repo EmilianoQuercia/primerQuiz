@@ -4,7 +4,7 @@
 let puntaje = 0
 
 let timer;
-let tiempo = 30
+let tiempo = 10
 let tablaPuntos = []
 
 
@@ -61,9 +61,12 @@ function cargarPregunta(){
 
     pantallaRegistro.style.display = 'none'
 
-    if (tiempo != 0){
-        pantallaJuego.style.display = 'flex'
-    }
+    //utilizo Operador logico AND remplazando la linea 67
+    tiempo!=0 && (pantallaJuego.style.display = 'flex')
+    
+    // if (tiempo != 0){
+    //     pantallaJuego.style.display = 'flex'
+    // }
     
     btnOpcion1.disabled=false
     btnOpcion2.disabled=false
@@ -78,6 +81,7 @@ function cargarPregunta(){
 
     //guardo en opciones el array de otras opciones con el metodo spread (...)    
     opciones = [...objPregunta.otrasOpciones]
+
    //le agrego a opciones la respuesta correcta
     opciones.push(objPregunta.respuesta)
 
@@ -160,11 +164,14 @@ function guardarPuntos(puntos,usuario){
 
     tablaPuntos.push(datosJugador)
 
+
     mejorPuntaje = tablaPuntos.sort((a,b)=> b.puntaje-a.puntaje)
 
-    if (mejorPuntaje.length>5){
-        mejorPuntaje.pop()
-    }
+    mejorPuntaje.length>5 && mejorPuntaje.pop()
+    
+    // if (mejorPuntaje.length>5){
+    //     mejorPuntaje.pop()
+    // }
 
     const enJSON = JSON.stringify(mejorPuntaje)
     localStorage.setItem('tabla',enJSON)

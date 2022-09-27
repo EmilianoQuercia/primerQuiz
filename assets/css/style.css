@@ -153,6 +153,12 @@ body{
     font-size: 20px;
     margin: 10px;
 }
+
+.msj{
+    color: #f00;
+    font-weight: bold;
+}
+
 .msjNombre{
     text-align: center;
 }
