@@ -4,7 +4,7 @@
 let puntaje = 0
 
 let timer;
-let tiempo = 10
+let tiempo = 30
 let tablaPuntos = []
 
 
