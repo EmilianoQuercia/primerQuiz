@@ -115,9 +115,14 @@ function seleccionarOpcion(index){
  
     //chequeamos que la opcion elegida sea la correcta
     if(opciones[index] == objPregunta.respuesta){
-        
-        msjRespuestas.innerHTML = 'EXCELENTE!!!!'
-        msjRespuestas.style.color = 'green'
+        Swal.fire({
+            icon: 'success',
+            title: 'CORRECTA',
+            timer: '2000',
+            showConfirmButton: false
+        })      
+        // msjRespuestas.innerHTML = 'EXCELENTE!!!!'
+        // msjRespuestas.style.color = 'green'
         puntaje++
         //si responde bien le suma 4 segundos de tiempo como un premio
         tiempo +=4
@@ -125,9 +130,15 @@ function seleccionarOpcion(index){
         setTimeout(()=>cargarPregunta(), 2000)
 
     }else{
-        
-        msjRespuestas.innerHTML = `INCORRECTO. La respuesta es ${objPregunta.respuesta}`
-        msjRespuestas.style.color = 'red'
+        Swal.fire({
+            icon: 'error',
+            title: 'INCORRECTO',
+            text: `La respuesta es ${objPregunta.respuesta}`,
+            timer: '2000',
+            showConfirmButton: false
+        })  
+        // msjRespuestas.innerHTML = `INCORRECTO. La respuesta es ${objPregunta.respuesta}`
+        // msjRespuestas.style.color = 'red'
         setTimeout(()=>cargarPregunta(), 2000)
          
     }  
