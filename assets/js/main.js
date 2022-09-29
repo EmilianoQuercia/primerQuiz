@@ -167,17 +167,29 @@ function mostrarPuntajeFinal(){
 
 function guardarPuntos(puntos,usuario){
 
+    let datosJugador = {puntaje:puntos, Jugador:usuario}
+    //chequea que haya algo cargado en el storage
     if (JSON.parse(localStorage.getItem('tabla'))){
         tablaPuntos = JSON.parse(localStorage.getItem('tabla'))
+
+        // si tenemos el puntaje mas alto nos tira un mensaje de alerta
+        if(datosJugador.puntaje>tablaPuntos[0].puntaje){
+            Swal.fire({
+                icon: 'success',
+                title: 'NUEVO RECORD',
+                text: `FELICITACION ${datosJugador.Jugador} \n Tenes el mejor Puntaje`,
+                timer: '5000',
+                showConfirmButton: false
+            })  
+        }
     }
     
-    let datosJugador = {puntaje:puntos, Jugador:usuario}
-
     tablaPuntos.push(datosJugador)
 
-
+    //acomodamos los puntajes de mayor a menor
     mejorPuntaje = tablaPuntos.sort((a,b)=> b.puntaje-a.puntaje)
 
+    //Cuando la tabla supera los 5 mejores puntajes va borrando el ultimo
     mejorPuntaje.length>5 && mejorPuntaje.pop()
     
     // if (mejorPuntaje.length>5){
@@ -188,7 +200,6 @@ function guardarPuntos(puntos,usuario){
     localStorage.setItem('tabla',enJSON)
 
 }
-
 
 
 function pintarPuntaje(){
