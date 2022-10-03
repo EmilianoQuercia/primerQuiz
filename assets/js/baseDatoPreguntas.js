@@ -400,6 +400,14 @@ const baseDatosPreguntas= [
         respuesta: 'DELFIN',
         otrasOpciones: ['ORCA','BALLENA','FOCA']
     },
+    {
+        id:51,
+        rubro: 'television',
+        pregunta: '¿Quién creó las películas "La quimera del oro" y "Luces de la ciudad"?',
+        imagen: './assets/img/television.jpg',
+        respuesta: 'CHARLES CHAPLIN',
+        otrasOpciones: ['STANLEY KUBRICK','ALFRED HITCHCOCK','BUSTER KEATON']
+    },
 
     {
         id:1000,
@@ -809,6 +817,38 @@ const baseDatosPreguntas= [
         respuesta: 'UNA',
         otrasOpciones: ['DOS','TRES','NINGUNA']
     },
+    {
+        id:1051,
+        rubro: 'arte',
+        pregunta: 'El autor de la Odisea también escribió:',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'ILÍADA',
+        otrasOpciones: ['HEROIDES','CANDIDE','ENEIDA']
+    },
+    {
+        id:1052,
+        rubro: 'arte',
+        pregunta: '¿Cuál es un tipo de poesía japonesa?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'HAIKU',
+        otrasOpciones: ['HANTASU','HOKKA','HOKUSAI']
+    },
+    {
+        id:1053,
+        rubro: 'arte',
+        pregunta: '¿Quién compuso el "Bolero"?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'MAURICE RAVEL',
+        otrasOpciones: ['CLAUDE DEBUSSY','MODEST MUSORGSKY','RICHARD WAGNER']
+    },
+    {
+        id:1054,
+        rubro: 'arte',
+        pregunta: '¿En qué idioma escribio Franz Kafka sus novelas?',
+        imagen: './assets/img/arte.jpg',
+        respuesta: 'ALEMÁN',
+        otrasOpciones: ['CHECO','INGLES','HÚNGARO']
+    },
 
     {
         id:2000,
@@ -929,6 +969,142 @@ const baseDatosPreguntas= [
         imagen: './assets/img/geografia.jpg',
         respuesta: 'AMAZONA',
         otrasOpciones: ['NILO','MISISIPI','CONGO']
+    },
+    {
+        id:2015,
+        rubro: 'geografia',
+        pregunta: '¿Cual de estas ciudades tiene un puerto marítimo?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'GÉNOVA',
+        otrasOpciones: ['KINSHASA','CALGARY','QUITO']
+    },
+    {
+        id:2016,
+        rubro: 'geografia',
+        pregunta: '¿Qué se encuentra entre Siberia y Alaska?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'MAR DE BERING',
+        otrasOpciones: ['NUEVA ZELANDA','ISLAS MALVINAS','ISLANDIA']
+    },
+    {
+        id:2017,
+        rubro: 'geografia',
+        pregunta: '¿Cual de estas ciudades es la mas alejada del mar?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'ASUNCIÓN',
+        otrasOpciones: ['LOS ÁNGELES','MADRID','SAN PETERSBURGO']
+    },
+    {
+        id:2018,
+        rubro: 'geografia',
+        pregunta: '¿Dónde está la ciudad de Monza?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'ITALIA',
+        otrasOpciones: ['ESPAÑA','SUIZA','FRANCIA']
+    },
+    {
+        id:2019,
+        rubro: 'geografia',
+        pregunta: '¿Qué río atraviesa la ciudad de Viena?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'DANUBIO',
+        otrasOpciones: ['VOLGA','RIN','ELBA']
+    },
+    {
+        id:2020,
+        rubro: 'geografia',
+        pregunta: '¿De dónde llegaron los cerdos a América del Norte ?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'EUROPA',
+        otrasOpciones: ['INDIA','AUSTRALIA','ÁFRICA']
+    },
+    {
+        id:2021,
+        rubro: 'geografia',
+        pregunta: '¿Cuál es la ciudad más grande de Turquía?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'ESTAMBUL',
+        otrasOpciones: ['ESMIRNA','ANKARA','ANTALYA']
+    },
+    {
+        id:2022,
+        rubro: 'geografia',
+        pregunta: 'La ciudad de Buenos Aires es la más cercana a:',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'URUGUAY',
+        otrasOpciones: ['BOLIVIA','PARAGUAY','CHILE']
+    },
+    {
+        id:2023,
+        rubro: 'geografia',
+        pregunta: '¿La bandera de que país es blanca con un punto rojo?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'JAPÓN',
+        otrasOpciones: ['TURQUÍA','CHINA','EE. UU.']
+    },
+    {
+        id:2024,
+        rubro: 'geografia',
+        pregunta: '¿Qué ciudad es la capital de Columbia Británica?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'VICTORIA',
+        otrasOpciones: ['YELLOWKNIFE','REGINA','GOOSE BAY']
+    },
+    {
+        id:2025,
+        rubro: 'geografia',
+        pregunta: '¿Cuál es el segundo océano mas extenso?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'ATLÁNTICO',
+        otrasOpciones: ['PACÍFICO','ÍNDICO','ANTÁRTICO']
+    },
+    {
+        id:2026,
+        rubro: 'geografia',
+        pregunta: '¿Qué ciudad NO se encuentra en Venezuela?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'COCHABAMBA',
+        otrasOpciones: ['BARQUISIMETO','MARACAIBO','MARACAY']
+    },
+    {
+        id:2027,
+        rubro: 'geografia',
+        pregunta: '¿Qué estado era parte de Yugoslavia?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'MACEDONIA DEL NORTE',
+        otrasOpciones: ['HUNGRÍA','POLONIA','RUMANIA']
+    },
+    {
+        id:2028,
+        rubro: 'geografia',
+        pregunta: '¿Dónde se encuentra Tebas de Beocia?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'GRECIA',
+        otrasOpciones: ['ITALIA','ALBANIA','TURQUIA']
+    },
+    {
+        id:2029,
+        rubro: 'geografia',
+        pregunta: '¿Dónde podemos encontrar las montañas Kazbek, Dykhtau y Elbrus?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'CÁUCASO',
+        otrasOpciones: ['KARAKÓRUM','ÁFRICA CENTRAL','ANTÁRTIDA']
+    },
+    {
+        id:2030,
+        rubro: 'geografia',
+        pregunta: '¿Qué río fluye a través dl Gran Cañón de los Estados Unidos?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'COLORADO',
+        otrasOpciones: ['YUKON','OHIO','RÍO BRAVO']
+    },
+    {
+        id:2031,
+        rubro: 'geografia',
+        pregunta: '¿Cuál es la ciudad más grande de Andalucía?',
+        imagen: './assets/img/geografia.jpg',
+        respuesta: 'SEVILLA',
+        otrasOpciones: ['CORDOBA','CÁDIZ','GRANADA']
     },
     {
         id:3000,
@@ -1099,6 +1275,254 @@ const baseDatosPreguntas= [
         otrasOpciones: ['ASIA','AMERICA','OCEANIA']
     },
     {
+        id:3021,
+        rubro:'ciencia',
+        pregunta: '¿Donde esta la cóclea? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'OIDO',
+        otrasOpciones: ['PENE','VAGINA','NARIZ']
+    },
+    {
+        id:3022,
+        rubro:'ciencia',
+        pregunta: '¿Que cebada es germinada artificialmente y tostada? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'MALTA',
+        otrasOpciones: ['LÚPULO','LEVADURA','RAKIA']
+    },
+    {
+        id:3023,
+        rubro:'ciencia',
+        pregunta: '¿Qué técnica quirúrgica crea otra ruta para que la sangre fluya? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'BYPASS',
+        otrasOpciones: ['BYLINE','BYCATCH','BYWAY']
+    },
+    {
+        id:3024,
+        rubro:'ciencia',
+        pregunta: '¿Cuál de estos animales está en la parte superior de la cadena trófica? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'ÁGUILA PESCADORA',
+        otrasOpciones: ['PERCA EUROPEA','CAMARÓN','ALBURNO']
+    },
+    {
+        id:3024,
+        rubro:'ciencia',
+        pregunta: '¿Qué parte de la planta ingerimos cuando comemos rábani rusticano? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'RAÍZ',
+        otrasOpciones: ['TALLO','HOJA','FLOR']
+    },
+    {
+        id:3025,
+        rubro:'ciencia',
+        pregunta: '¿Qué fueron Rodinia y Pangea? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'SUPER CONTINENTES',
+        otrasOpciones: ['LUNAS','METEOROIDES','DINOSAURIOS']
+    },
+    {
+        id:3026,
+        rubro:'ciencia',
+        pregunta: 'La hipótesis del mundo de ARN trata de explicar: ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'ORIGEN DE LA VIDA',
+        otrasOpciones: ['EXTINCION DE DINOSAURIOS','BIG BANG','UNIVERSOS PARALELOS']
+    },
+    {
+        id:3027,
+        rubro:'ciencia',
+        pregunta: '¿En qué continente podemos encontrar una Mamba Negra? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'AFRICA',
+        otrasOpciones: ['ASIA','SUDAMERICA','OCEANIA']
+    },
+    {
+        id:3028,
+        rubro:'ciencia',
+        pregunta: '¿Qué defecto hace difícil enfocar bien los objetos lejanos? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'MIOPÍA',
+        otrasOpciones: ['HIPERMETROPÍA','DISLEXIA','NEUMONÍA']
+    },
+    {
+        id:3029,
+        rubro:'ciencia',
+        pregunta: '¿Qué órgano filtra la sangre? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'RIÑÓN',
+        otrasOpciones: ['DUODENO','FARINGE','PULMÓN']
+    },
+    {
+        id:3030,
+        rubro:'ciencia',
+        pregunta: '¿Cuál de estos objetos es inmóvil para un observador de la Tierra? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'NINGUNO DE ESOS',
+        otrasOpciones: ['VÍA LÁCTEA','SOL','LUNA']
+    },
+    {
+        id:3031,
+        rubro:'ciencia',
+        pregunta: '¿El cultivo de que fruta a menudo requiere ponización por saturación ya que no es atractivo para las abejas? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'KIWI',
+        otrasOpciones: ['FRESA','MORA','MANZANA']
+    },
+    {
+        id:3032,
+        rubro:'ciencia',
+        pregunta: 'Cuando un gas alcanza su punto de condensación se convierte en:',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'LÍQUIDO',
+        otrasOpciones: ['SÓLIDO','PLASMA','CONDENSADO DE BOSE-EINSTEIN']
+    },
+    {
+        id:3033,
+        rubro:'ciencia',
+        pregunta: '¿Qué es un mandril? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'PRIMATE',
+        otrasOpciones: ['ESPACIO VECTORIAL','GRANO','FERMION']
+    },
+    {
+        id:3034,
+        rubro:'ciencia',
+        pregunta: '¿Qué es la salida de sngre de un vaso sanguíneo? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'HEMORRAGIA',
+        otrasOpciones: ['HEMOFILIA','HEMOSTASIA','HEMÓLISIS']
+    },
+    {
+        id:3035,
+        rubro:'ciencia',
+        pregunta: '¿Qué planta se adhiere a las ramas de un árbol para absorber agua y nutrientes? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'MUÉRDAGO',
+        otrasOpciones: ['CARDO ESTRELLADO','HIERBA DONCELLA','ADELFA']
+    },
+    {
+        id:3035,
+        rubro:'ciencia',
+        pregunta: '¿Cuál es la serpiente más grande? ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'ANACONDA',
+        otrasOpciones: ['MAMBA NEGRA','COBRA REAL','SERPIENTE DE CASCABEL']
+    },
+    {
+        id:3036,
+        rubro:'ciencia',
+        pregunta: 'La soldadura fuerte usa una temperatura de fusión superior a: ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: '450°',
+        otrasOpciones: ['0°','3000°','50°']
+    },
+    {
+        id:3037,
+        rubro:'ciencia',
+        pregunta: '¿Quién desarrolló la primera vacuna contra la poliomelitis en 1952?',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'JONAS SALK',
+        otrasOpciones: ['FLORENCE SABIN','PAUL EHRLICH','KARL LANDSTEINER']
+    },
+    {
+        id:3038,
+        rubro:'ciencia',
+        pregunta: '¿Qué piedra preciosa consiste en un solo elemnto químico?',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'DIAMANTE',
+        otrasOpciones: ['JADE','ÓPALO','ESMERALDA']
+    },
+    {
+        id:3039,
+        rubro:'ciencia',
+        pregunta: '¿Cuál es otro nombre para la adrenalina?',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'EPINEFRINA',
+        otrasOpciones: ['CALCITRIOL','ACETILCOLINA','MELATONINA']
+    },
+    {
+        id:3040,
+        rubro:'ciencia',
+        pregunta: '¿Qué animal NO es hematófago?',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'LOBO',
+        otrasOpciones: ['MURCIELAGO VAMPIRO','ANOPHELES','LAMPREA']
+    },
+    {
+        id:3041,
+        rubro:'ciencia',
+        pregunta: '¿Cuál es un medicamento para calmar o eliminar el dolor?',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'ANALGÉSICO',
+        otrasOpciones: ['DIURÉTICO','ANTIBIÓTICO','ANOREXÍGENO']
+    },
+    {
+        id:3042,
+        rubro:'ciencia',
+        pregunta: '¿Qué fuerza mantiene el agua en los océanos ?',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'GRAVEDAD',
+        otrasOpciones: ['FUERZA MAGNÉTICA','FRICCIÓN','RESISTENCIA AL AIRE']
+    },
+    {
+        id:3043,
+        rubro:'ciencia',
+        pregunta: '¿Cuál de estos animales NO puede retraer sus garras ?',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'OSO',
+        otrasOpciones: ['LYNX','LEÓN','TIGRE']
+    },
+    {
+        id:3044,
+        rubro:'ciencia',
+        pregunta: 'Un animal que está activo durante el día y descansa durante la noche es:',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'DIURNO',
+        otrasOpciones: ['NOCTURNO','BIPOLAR','CREPUSCULAR']
+    },
+    {
+        id:3045,
+        rubro:'ciencia',
+        pregunta: '¿Qué organo está cubierto por la pleura ?',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'PULMÓN',
+        otrasOpciones: ['RODILLA','ESTÓMAGO','CEREBRO']
+    },
+    {
+        id:3046,
+        rubro:'ciencia',
+        pregunta: 'Merina es una raza de:',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'OVEJA',
+        otrasOpciones: ['GATO','POLLO','GANADO']
+    },
+    {
+        id:3047,
+        rubro:'ciencia',
+        pregunta: '¿Qué se ha formado durante muchos años a partir de turba de alta presión?',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'CARBÓN',
+        otrasOpciones: ['GRANITO','LADRILLO','ORO']
+    },
+    {
+        id:3048,
+        rubro:'ciencia',
+        pregunta: '¿Cuál era utilizado como anestésico?',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'ÉTER',
+        otrasOpciones: ['SANGRE','AMONÍACO','ARSÉNICO']
+    },
+    {
+        id:3049,
+        rubro:'ciencia',
+        pregunta: 'La mayoría de las plantas son: ',
+        imagen: './assets/img/ciencia.jpg',
+        respuesta: 'AUTÓTROFAS',
+        otrasOpciones: ['OVÍPARAS','PROCARIONTES','RUMIANTES']
+    },
+    {
         id:4000,
         rubro: 'deportes',
         pregunta: '¿Cuantos jugadores tiene un equipo de béisbol ',
@@ -1258,7 +1682,70 @@ const baseDatosPreguntas= [
         respuesta: '1974',
         otrasOpciones: ['1973','1976','1978']
     },
-
+    {
+        id:5012,
+        rubro: 'historia',
+        pregunta: '¿De donde provinieron los rescatistas de Benito Mussolini en septiembre de 1943?',
+        imagen: './assets/img/Historia.jpg',
+        respuesta: 'ALEMANIA',
+        otrasOpciones: ['RUSIA','FRANCIA','GRAN BRETAÑA']
+    },
+    {
+        id:5012,
+        rubro: 'historia',
+        pregunta: '¿Quien recibe gran poder y lujo, pero tiene una gran espada colgando sobre su cabeza?',
+        imagen: './assets/img/Historia.jpg',
+        respuesta: 'DAMOCLES',
+        otrasOpciones: ['ÍCARO','MENELAO','SÍSIFO']
+    },
+    {
+        id:5013,
+        rubro: 'historia',
+        pregunta: '¿Los doce apóstoles siguieron a: ?',
+        imagen: './assets/img/Historia.jpg',
+        respuesta: 'JESUS',
+        otrasOpciones: ['BUDA','GADAFI','MAHOMA']
+    },
+    {
+        id:5014,
+        rubro: 'historia',
+        pregunta: '¿Quién era la hija más joven del profeta islámico Mahoma?',
+        imagen: './assets/img/Historia.jpg',
+        respuesta: 'FATIMA',
+        otrasOpciones: ['KHADIJA','AISHA','NUSAYBA']
+    },
+    {
+        id:5015,
+        rubro: 'historia',
+        pregunta: '¿Qué titan de la mitologia griega robó el fuego celestial para la humanidad?',
+        imagen: './assets/img/Historia.jpg',
+        respuesta: 'PROMETEO',
+        otrasOpciones: ['HEFESTO','PERSES','HIPERIÓN']
+    },
+    {
+        id:5016,
+        rubro: 'historia',
+        pregunta: '¿Qué lugar de nacimiento de Jesús se menciona en el Nuevo Testamento (aparte de Nazaret)?',
+        imagen: './assets/img/Historia.jpg',
+        respuesta: 'BELEN',
+        otrasOpciones: ['JERUSALÉN','TEL AVIV','BEIRUT']
+    },
+    {
+        id:5017,
+        rubro: 'historia',
+        pregunta: '¿Quién nació en el siglo XIX?',
+        imagen: './assets/img/Historia.jpg',
+        respuesta: 'FEDERICO CHOPIN',
+        otrasOpciones: ['LAURENCE STERNE','LEONHARD EULER','ALBERT CAMUS']
+    },
+    {
+        id:5018,
+        rubro: 'historia',
+        pregunta: 'En 2010, un terremoto mató a mas de 100000 personas en:',
+        imagen: './assets/img/Historia.jpg',
+        respuesta: 'HAITÍ',
+        otrasOpciones: ['JAPÓN','BANGLADÉS','PAPÚA NVA. GUINEA']
+    },
     {
         id:6000,
         rubro: 'general',
