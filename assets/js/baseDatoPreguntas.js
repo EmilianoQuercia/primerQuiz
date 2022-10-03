@@ -468,7 +468,7 @@ const baseDatosPreguntas= [
     {
         id:1008,
         rubro: 'arte',
-        pregunta: '¿cual fue la obra mas importante de Frida Kahlo?',
+        pregunta: '¿Cual fue la obra mas importante de Frida Kahlo?',
         imagen: './assets/img/arte.jpg',
         respuesta: 'LAS DOS FRIDAS',
         otrasOpciones: ['DIEGO Y YO','LAS FLORES Y LA UNICEJA','AUTORRETRATO CON TERCIOPELO']
@@ -564,7 +564,7 @@ const baseDatosPreguntas= [
     {
         id:1020,
         rubro: 'arte',
-        pregunta: '¿En que provincia Argenrina nació Mercedes Sosa?',
+        pregunta: '¿En que provincia Argentina nació Mercedes Sosa?',
         imagen: './assets/img/arte.jpg',
         respuesta: 'TUCUMAN',
         otrasOpciones: ['SANTIAGO DEL ESTERO','SALTA','BUENOS AIRES']
@@ -856,7 +856,7 @@ const baseDatosPreguntas= [
         pregunta: '¿Que colores tiene la bandera de Italia ',
         imagen: './assets/img/geografia.jpg',
         respuesta: 'VERDE, BLANCO, ROJO',
-        otrasOpciones: ['AZUL,BLANCO, ROJO','ROJO, BANCO, ROJO','VERDE,BLANCO,VERDE']
+        otrasOpciones: ['AZUL, BLANCO, ROJO','ROJO, BANCO, ROJO','VERDE, BLANCO, VERDE']
     },
     {
         id:2006,

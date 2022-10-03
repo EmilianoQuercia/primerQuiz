@@ -117,9 +117,12 @@ function seleccionarOpcion(index){
     if(opciones[index] == objPregunta.respuesta){
         Swal.fire({
             icon: 'success',
+            iconColor: '#29bf12',
+            color: '#000',
             title: 'CORRECTA',
             timer: '2000',
-            showConfirmButton: false
+            showConfirmButton: false,
+            background: '#ffaaaa'
         })      
         // msjRespuestas.innerHTML = 'EXCELENTE!!!!'
         // msjRespuestas.style.color = 'green'
@@ -132,10 +135,13 @@ function seleccionarOpcion(index){
     }else{
         Swal.fire({
             icon: 'error',
+            iconColor: '#f00',
+            color: '#000',
             title: 'INCORRECTO',
             text: `La respuesta es ${objPregunta.respuesta}`,
             timer: '2000',
-            showConfirmButton: false
+            showConfirmButton: false,
+            background: '#ffaaaa'
         })  
         // msjRespuestas.innerHTML = `INCORRECTO. La respuesta es ${objPregunta.respuesta}`
         // msjRespuestas.style.color = 'red'
@@ -176,10 +182,13 @@ function guardarPuntos(puntos,usuario){
         if(datosJugador.puntaje>tablaPuntos[0].puntaje){
             Swal.fire({
                 icon: 'success',
+                iconColor: '#29bf12',
                 title: 'NUEVO RECORD',
-                text: `FELICITACION ${datosJugador.Jugador} \n Tenes el mejor Puntaje`,
+                text: `FELICITACION ${datosJugador.Jugador} Tenes el mejor Puntaje`,
+                color: '#000',
                 timer: '5000',
-                showConfirmButton: false
+                showConfirmButton: false,
+                background: '#ffaaaa'
             })  
         }
     }
