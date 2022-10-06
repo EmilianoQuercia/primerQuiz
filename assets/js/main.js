@@ -19,7 +19,7 @@ sonidoPerder.volume = 0.5
 let puntaje = 0
 
 let timer;
-let tiempo = 10
+let tiempo = 30
 let tablaPuntos = []
 
 
@@ -59,11 +59,14 @@ pantallaAjustes.style.display = 'none'
 btnJugar.addEventListener('click', ()=>{
     inicio.style.display= 'none'
     pantallaRegistro.style.display = 'flex'
-    let vM = localStorage.getItem('volumenMusica')
-    let vS = localStorage.getItem('volumenSonidos')
-    musica.volume = vM
-    sonidoGanar.volume = vS
-    sonidoPerder.volume = vS
+    if (localStorage.getItem('volumenMusica') || localStorage.getItem('volumenSonidos')){
+        let vM = localStorage.getItem('volumenMusica')
+        let vS = localStorage.getItem('volumenSonidos')
+        musica.volume = vM
+        sonidoGanar.volume = vS
+        sonidoPerder.volume = vS
+    }
+  
     musica.play()
 })
 
