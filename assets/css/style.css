@@ -8,7 +8,7 @@
 
 body{
     background-image: url(../img/fondojuego1-min.jpg);
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .contenedorPrincipal{
