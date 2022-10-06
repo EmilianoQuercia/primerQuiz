@@ -1,21 +1,41 @@
+document.addEventListener('DOMContentLoaded', () => {
+   
+})
 
+
+let musica = new Audio('./assets/sound/musicaPrincipal.mp3')
+
+musica.volume = 0.5
+
+let sonidoGanar = new Audio('./assets/sound/correcto.mp3')
+
+sonidoGanar.volume = 0.5
+
+let sonidoPerder = new Audio('./assets/sound/incorrecto.wav')
+
+sonidoPerder.volume = 0.5
 
 //variable para saber cuantas respuestas correctas tenemos al final
 let puntaje = 0
 
 let timer;
-let tiempo = 30
+let tiempo = 10
 let tablaPuntos = []
 
 
 //todo lo que llamo de HTML
 let inicio = document.getElementById('pantallaInicio')
 let pantallaRegistro = document.getElementById('pantallaRegistro')
+let pantallaAjustes = document.getElementById('pantallaAjustes')
+let controlMusica = document.getElementById('inputMusica')
+let controlSonido = document.getElementById('inputSonido')
 let pantallaJuego = document.getElementById('pantallaJuego')
 let usuario = document.getElementById('usuario')
 let pantallaPuntos = document.getElementById('pantallaFinal')
 let btnJugar = document.getElementById('jugar')
 let botonComenzar = document.getElementById('comenzar')
+let botonAjustes = document.getElementById('btnAjustes')
+let botonVolver = document.getElementById('btnVolver')
 let spanPregunta = document.getElementById('pregunta')
 let btnOpcion1 = document.getElementById('opc1')
 let btnOpcion2 = document.getElementById('opc2')
@@ -34,10 +54,17 @@ let puntosGuardados = document.getElementById('puntosGuardados')
 pantallaJuego.style.display = 'none'
 pantallaPuntos.style.display = 'none'
 pantallaRegistro.style.display = 'none'
+pantallaAjustes.style.display = 'none'
 
 btnJugar.addEventListener('click', ()=>{
     inicio.style.display= 'none'
     pantallaRegistro.style.display = 'flex'
+    let vM = localStorage.getItem('volumenMusica')
+    let vS = localStorage.getItem('volumenSonidos')
+    musica.volume = vM
+    sonidoGanar.volume = vS
+    sonidoPerder.volume = vS
+    musica.play()
 })
 
 //cuando apreto el boton comenzar llama a la funcion cargar preguntas y empieza a correr el tiempo
@@ -46,13 +73,43 @@ botonComenzar.addEventListener('click', ()=>{
     timer = setInterval('restarTiempo()',1000)
 } )
 
+botonAjustes.addEventListener('click', ajustes)
+
+controlMusica.addEventListener('change', controlesMusica)
+controlSonido.addEventListener('change',controlesSonido)
+
+botonVolver.addEventListener('click', btnVolver)
 
 btnOpcion1.addEventListener('click', ()=>seleccionarOpcion(0))
 btnOpcion2.addEventListener('click', ()=>seleccionarOpcion(1))
 btnOpcion3.addEventListener('click', ()=>seleccionarOpcion(2))
 btnOpcion4.addEventListener('click', ()=>seleccionarOpcion(3))
+
 btnReinicio.addEventListener('click',reiniciar)
 
+
+
+function ajustes(){
+    pantallaRegistro.style.display = 'none'
+    pantallaAjustes.style.display = 'flex'
+}
+
+function controlesMusica(){
+    musica.volume = controlMusica.value / 100
+    localStorage.setItem('volumenMusica', musica.volume)
+}
+
+function controlesSonido(){
+    sonidoGanar.play()
+    sonidoGanar.volume = controlSonido.value / 100
+    sonidoPerder.volume = controlSonido.value / 100 
+    localStorage.setItem('volumenSonidos', sonidoGanar.volume)
+}
+
+function btnVolver(){
+    pantallaRegistro.style.display = 'flex'
+    pantallaAjustes.style.display = 'none'
+}
 
 
 function cargarPregunta(){
@@ -115,6 +172,9 @@ function seleccionarOpcion(index){
  
     //chequeamos que la opcion elegida sea la correcta
     if(opciones[index] == objPregunta.respuesta){
+  
+        sonidoGanar.play()
+
         Swal.fire({
             icon: 'success',
             iconColor: '#29bf12',
@@ -133,6 +193,8 @@ function seleccionarOpcion(index){
         setTimeout(()=>cargarPregunta(), 2000)
 
     }else{
+        sonidoPerder.play()
+
         Swal.fire({
             icon: 'error',
             iconColor: '#f00',
@@ -226,6 +288,7 @@ function pintarPuntaje(){
 
 
 function reiniciar(){
-    location.reload()
+    location.reload();
+    musica.stop();
 }
 

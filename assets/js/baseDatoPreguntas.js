@@ -1093,7 +1093,7 @@ const baseDatosPreguntas= [
     {
         id:2030,
         rubro: 'geografia',
-        pregunta: '¿Qué río fluye a través dl Gran Cañón de los Estados Unidos?',
+        pregunta: '¿Qué río fluye a través del Gran Cañón de los Estados Unidos?',
         imagen: './assets/img/geografia.jpg',
         respuesta: 'COLORADO',
         otrasOpciones: ['YUKON','OHIO','RÍO BRAVO']

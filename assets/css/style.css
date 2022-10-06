@@ -8,11 +8,70 @@
 
 body{
     background-image: url(../img/fondojuego1-min.jpg);
+    overflow-y: hidden;
+}
+
+.contenedorPrincipal{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh; 
     font-family:'Oswald', sans-serif ;
+}
+.divAjustes{
+    width: 100%;
+    display: flex;
+    justify-content:end;
+}
+.btnAjustes{
+    border-radius: 50%;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    box-shadow: 2px 1px  #000;
+    background-color: #f29a2e;
+}
+.btnAjustes:active{
+    background-color: #ce7c18;
+}
+.btnAjustes img{
+    width: 20px;
+  
+}
+
+/* -----------PANTALLA AJUSTES-------------- */
+
+.pantallaAjustes{
+    background-color:#f29a2e;
+    color: #000;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 20%;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.pantallaAjustes h3{
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.pantallaAjustes button{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    box-shadow: 4px 4px 5px #f29999;
+    border-radius: 15px;
+    background-color: #bf5669;
+    color: #fff;
+
 }
 
 /*---------- PANTALLA DE INICIO-------------- */
@@ -22,6 +81,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .logoPrincipal{
@@ -35,7 +95,7 @@ body{
     margin: 20px;
     padding: 10px;
     border: none;
-    box-shadow: 3px 3px #f29999;
+    box-shadow: 4px 4px 5px #f29999;
     border-radius: 15px;
     background-color: #bf5669;
     color: #fff;
@@ -221,6 +281,7 @@ body{
         font-size: 18px;
         padding: 5px;
     }
+
 }
 
 @media(max-width: 767px){
@@ -234,5 +295,9 @@ body{
 
     .final{
         width: 80%;
+    }
+
+    .pantallaAjustes{
+        width: 60%;
     }
 }
