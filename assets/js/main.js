@@ -1,7 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-   
-})
-
 
 let musica = new Audio('./assets/sound/musicaPrincipal.mp3')
 
@@ -14,6 +10,10 @@ sonidoGanar.volume = 0.5
 let sonidoPerder = new Audio('./assets/sound/incorrecto.wav')
 
 sonidoPerder.volume = 0.5
+
+let sonidoRecord = new Audio('./assets/sound/ganador.mp3')
+
+sonidoRecord.volume = 0.5
 
 //variable para saber cuantas respuestas correctas tenemos al final
 let puntaje = 0
@@ -98,14 +98,17 @@ function ajustes(){
 }
 
 function controlesMusica(){
+    //nos guarda el volumen de la musica que elegimos la musica para que arranque siempre seteado de esa manera
     musica.volume = controlMusica.value / 100
     localStorage.setItem('volumenMusica', musica.volume)
 }
 
 function controlesSonido(){
+    //nos guarda el volumen de los sonidos que elegimos la musica para que arranque siempre seteado de esa manera
     sonidoGanar.play()
     sonidoGanar.volume = controlSonido.value / 100
     sonidoPerder.volume = controlSonido.value / 100 
+    sonidoRecord.volume = controlSonido.value / 100
     localStorage.setItem('volumenSonidos', sonidoGanar.volume)
 }
 
@@ -115,18 +118,21 @@ function btnVolver(){
 }
 
 
-function cargarPregunta(){
-    //elegimos una pregunta al azar
-    let indicePregunta = Math.round(Math.random()*baseDatosPreguntas.length)
+ async function cargarPregunta(){
+    //llamamos con fetch a la base de datos 
+    const response = await fetch('./assets/data/baseDato.json')
+    const baseDato = await response.json();
 
+
+
+    //elegimos una pregunta al azar
+    let indicePregunta = Math.round(Math.random()*baseDato.length)
+    // console.log(indicePregunta);
     pantallaRegistro.style.display = 'none'
 
     //utilizo Operador logico AND remplazando la linea 67
     tiempo!=0 && (pantallaJuego.style.display = 'flex')
     
-    // if (tiempo != 0){
-    //     pantallaJuego.style.display = 'flex'
-    // }
     
     btnOpcion1.disabled=false
     btnOpcion2.disabled=false
@@ -137,8 +143,9 @@ function cargarPregunta(){
     msjRespuestas.innerHTML = ''
    
     //NOTA: genero variables sin let (objPregunta y opciones) para que sean globales y poder usarla en otras en funciones 
-    objPregunta = baseDatosPreguntas[indicePregunta]
-
+ 
+    objPregunta = baseDato[indicePregunta]
+  
     //guardo en opciones el array de otras opciones con el metodo spread (...)    
     opciones = [...objPregunta.otrasOpciones]
 
@@ -162,12 +169,12 @@ function cargarPregunta(){
 
 
     //borramos la pregunta que ya salio
-    baseDatosPreguntas.splice(indicePregunta,1)
+    baseDato.splice(indicePregunta,1)
 
 }
 
 
-function seleccionarOpcion(index){
+async function seleccionarOpcion(index){
     btnOpcion1.disabled=true
     btnOpcion2.disabled=true
     btnOpcion3.disabled=true
@@ -178,40 +185,37 @@ function seleccionarOpcion(index){
   
         sonidoGanar.play()
 
-        Swal.fire({
-            icon: 'success',
-            iconColor: '#29bf12',
-            color: '#000',
-            title: 'CORRECTA',
-            timer: '2000',
-            showConfirmButton: false,
-            background: '#ffaaaa'
+        await Swal.fire({
+                icon: 'success',
+                iconColor: '#29bf12',
+                color: '#000',
+                title: 'CORRECTA',
+                timer: '2000',
+                showConfirmButton: false,
+                background: '#ffaaaa'
         })      
-        // msjRespuestas.innerHTML = 'EXCELENTE!!!!'
-        // msjRespuestas.style.color = 'green'
+
         puntaje++
         //si responde bien le suma 4 segundos de tiempo como un premio
         tiempo +=4
 
-        setTimeout(()=>cargarPregunta(), 2000)
+        cargarPregunta()
 
     }else{
         sonidoPerder.play()
 
-        Swal.fire({
-            icon: 'error',
-            iconColor: '#f00',
-            color: '#000',
-            title: 'INCORRECTO',
-            text: `La respuesta es ${objPregunta.respuesta}`,
-            timer: '2000',
-            showConfirmButton: false,
-            background: '#ffaaaa'
+        await Swal.fire({
+                icon: 'error',
+                iconColor: '#f00',
+                color: '#000',
+                title: 'INCORRECTO',
+                text: `La respuesta es ${objPregunta.respuesta}`,
+                timer: '2000',
+                showConfirmButton: false,
+                background: '#ffaaaa'
         })  
-        // msjRespuestas.innerHTML = `INCORRECTO. La respuesta es ${objPregunta.respuesta}`
-        // msjRespuestas.style.color = 'red'
-        setTimeout(()=>cargarPregunta(), 2000)
-         
+    
+        cargarPregunta() 
     }  
 }
 
@@ -245,6 +249,7 @@ function guardarPuntos(puntos,usuario){
 
         // si tenemos el puntaje mas alto nos tira un mensaje de alerta
         if(datosJugador.puntaje>tablaPuntos[0].puntaje){
+            sonidoRecord.play()
             Swal.fire({
                 icon: 'success',
                 iconColor: '#29bf12',

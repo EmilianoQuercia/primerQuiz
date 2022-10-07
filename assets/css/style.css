@@ -267,23 +267,6 @@ body{
 
 /* -----------------@MEDIA-------------------------- */
 
-@media(max-width: 576px){
-
-    .registro{
-        width: 85%;  
-    }
-
-    .cajaPregunta img{
-        height: 60px;
-        margin-top: 5px;
-    }
-    .cajaPregunta{
-        font-size: 18px;
-        padding: 5px;
-    }
-
-}
-
 @media(max-width: 767px){
     .cajaPregunta{
         width: 80vw;
@@ -300,4 +283,30 @@ body{
     .pantallaAjustes{
         width: 60%;
     }
+}
+
+@media(max-width: 576px){
+
+    .registro{
+        width: 85%;  
+    }
+
+    .cajaPregunta img{
+        height: 60px;
+        margin-top: 5px;
+    }
+    .cajaPregunta{
+        font-size: 18px;
+        padding: 5px;
+    }
+    .reloj{
+        color:yellow;
+        width: 30px;
+        height: 30px;
+        border: 2px solid yellow;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 18px;
+    }
+
 }
