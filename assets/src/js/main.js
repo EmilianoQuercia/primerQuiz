@@ -129,7 +129,6 @@ function btnVolver(){
     let indicePregunta = Math.round(Math.random()*baseDato.length)
    
     pantallaRegistro.style.display = 'none'
-    console.log(indicePregunta);
     //utilizo Operador logico AND remplazando la linea 67
     tiempo!=0 && (pantallaJuego.style.display = 'flex')
     
@@ -145,7 +144,6 @@ function btnVolver(){
     //NOTA: genero variables sin let (objPregunta y opciones) para que sean globales y poder usarla en otras en funciones 
  
     objPregunta = baseDato[indicePregunta]
-    console.log(objPregunta);
   
     //guardo en opciones el array de otras opciones con el metodo spread (...)    
     opciones = [...objPregunta.otrasOpciones]
