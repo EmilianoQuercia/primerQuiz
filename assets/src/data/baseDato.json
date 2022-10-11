@@ -1403,7 +1403,7 @@
         "otrasOpciones": ["CARDO ESTRELLADO","HIERBA DONCELLA","ADELFA"]
     },
     {
-        "id":3035,
+        "id":3036,
         "rubro":"ciencia",
         "pregunta": "¿Cuál es la serpiente más grande? ",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1411,7 +1411,7 @@
         "otrasOpciones": ["MAMBA NEGRA","COBRA REAL","SERPIENTE DE CASCABEL"]
     },
     {
-        "id":3036,
+        "id":3037,
         "rubro":"ciencia",
         "pregunta": "La soldadura fuerte usa una temperatura de fusión superior a: ",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1419,7 +1419,7 @@
         "otrasOpciones": ["0°","3000°","50°"]
     },
     {
-        "id":3037,
+        "id":3038,
         "rubro":"ciencia",
         "pregunta": "¿Quién desarrolló la primera vacuna contra la poliomelitis en 1952?",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1427,7 +1427,7 @@
         "otrasOpciones": ["FLORENCE SABIN","PAUL EHRLICH","KARL LANDSTEINER"]
     },
     {
-        "id":3038,
+        "id":3039,
         "rubro":"ciencia",
         "pregunta": "¿Qué piedra preciosa consiste en un solo elemnto químico?",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1435,7 +1435,7 @@
         "otrasOpciones": ["JADE","ÓPALO","ESMERALDA"]
     },
     {
-        "id":3039,
+        "id":3040,
         "rubro":"ciencia",
         "pregunta": "¿Cuál es otro nombre para la adrenalina?",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1443,7 +1443,7 @@
         "otrasOpciones": ["CALCITRIOL","ACETILCOLINA","MELATONINA"]
     },
     {
-        "id":3040,
+        "id":3041,
         "rubro":"ciencia",
         "pregunta": "¿Qué animal NO es hematófago?",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1451,7 +1451,7 @@
         "otrasOpciones": ["MURCIELAGO VAMPIRO","ANOPHELES","LAMPREA"]
     },
     {
-        "id":3041,
+        "id":3042,
         "rubro":"ciencia",
         "pregunta": "¿Cuál es un medicamento para calmar o eliminar el dolor?",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1459,7 +1459,7 @@
         "otrasOpciones": ["DIURÉTICO","ANTIBIÓTICO","ANOREXÍGENO"]
     },
     {
-        "id":3042,
+        "id":3043,
         "rubro":"ciencia",
         "pregunta": "¿Qué fuerza mantiene el agua en los océanos ?",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1467,7 +1467,7 @@
         "otrasOpciones": ["FUERZA MAGNÉTICA","FRICCIÓN","RESISTENCIA AL AIRE"]
     },
     {
-        "id":3043,
+        "id":3044,
         "rubro":"ciencia",
         "pregunta": "¿Cuál de estos animales NO puede retraer sus garras ?",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1475,7 +1475,7 @@
         "otrasOpciones": ["LYNX","LEÓN","TIGRE"]
     },
     {
-        "id":3044,
+        "id":3045,
         "rubro":"ciencia",
         "pregunta": "Un animal que está activo durante el día y descansa durante la noche es:",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1483,7 +1483,7 @@
         "otrasOpciones": ["NOCTURNO","BIPOLAR","CREPUSCULAR"]
     },
     {
-        "id":3045,
+        "id":3046,
         "rubro":"ciencia",
         "pregunta": "¿Qué organo está cubierto por la pleura ?",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1491,7 +1491,7 @@
         "otrasOpciones": ["RODILLA","ESTÓMAGO","CEREBRO"]
     },
     {
-        "id":3046,
+        "id":3047,
         "rubro":"ciencia",
         "pregunta": "Merina es una raza de:",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1499,7 +1499,7 @@
         "otrasOpciones": ["GATO","POLLO","GANADO"]
     },
     {
-        "id":3047,
+        "id":3048,
         "rubro":"ciencia",
         "pregunta": "¿Qué se ha formado durante muchos años a partir de turba de alta presión?",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1507,7 +1507,7 @@
         "otrasOpciones": ["GRANITO","LADRILLO","ORO"]
     },
     {
-        "id":3048,
+        "id":3049,
         "rubro":"ciencia",
         "pregunta": "¿Cuál era utilizado como anestésico?",
         "imagen": "./assets/img/ciencia.jpg",
@@ -1515,7 +1515,7 @@
         "otrasOpciones": ["SANGRE","AMONÍACO","ARSÉNICO"]
     },
     {
-        "id":3049,
+        "id":3050,
         "rubro":"ciencia",
         "pregunta": "La mayoría de las plantas son: ",
         "imagen": "./assets/img/ciencia.jpg",

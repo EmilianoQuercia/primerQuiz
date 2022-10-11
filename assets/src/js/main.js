@@ -1,4 +1,5 @@
 
+
 let musica = new Audio('./assets/sound/musicaPrincipal.mp3')
 
 musica.volume = 0.5
@@ -19,7 +20,7 @@ sonidoRecord.volume = 0.5
 let puntaje = 0
 
 let timer;
-let tiempo = 30
+let tiempo = 60
 let tablaPuntos = []
 
 
@@ -120,16 +121,15 @@ function btnVolver(){
 
  async function cargarPregunta(){
     //llamamos con fetch a la base de datos 
-    const response = await fetch('./assets/data/baseDato.json')
+    const response = await fetch('./assets/src/data/baseDato.json')
     const baseDato = await response.json();
-
 
 
     //elegimos una pregunta al azar
     let indicePregunta = Math.round(Math.random()*baseDato.length)
-    // console.log(indicePregunta);
+   
     pantallaRegistro.style.display = 'none'
-
+    console.log(indicePregunta);
     //utilizo Operador logico AND remplazando la linea 67
     tiempo!=0 && (pantallaJuego.style.display = 'flex')
     
@@ -145,6 +145,7 @@ function btnVolver(){
     //NOTA: genero variables sin let (objPregunta y opciones) para que sean globales y poder usarla en otras en funciones 
  
     objPregunta = baseDato[indicePregunta]
+    console.log(objPregunta);
   
     //guardo en opciones el array de otras opciones con el metodo spread (...)    
     opciones = [...objPregunta.otrasOpciones]
@@ -170,11 +171,10 @@ function btnVolver(){
 
     //borramos la pregunta que ya salio
     baseDato.splice(indicePregunta,1)
-
 }
 
 
-async function seleccionarOpcion(index){
+function seleccionarOpcion(index){
     btnOpcion1.disabled=true
     btnOpcion2.disabled=true
     btnOpcion3.disabled=true
@@ -185,37 +185,38 @@ async function seleccionarOpcion(index){
   
         sonidoGanar.play()
 
-        await Swal.fire({
-                icon: 'success',
-                iconColor: '#29bf12',
-                color: '#000',
-                title: 'CORRECTA',
-                timer: '2000',
-                showConfirmButton: false,
-                background: '#ffaaaa'
+        Swal.fire({
+            icon: 'success',
+            iconColor: '#29bf12',
+            color: '#000',
+            title: 'CORRECTA',
+            timer: '2000',
+            showConfirmButton: false,
+            background: '#ffaaaa'
         })      
 
         puntaje++
         //si responde bien le suma 4 segundos de tiempo como un premio
         tiempo +=4
 
-        cargarPregunta()
-
+        setTimeout('cargarPregunta()',2000)
+            
     }else{
         sonidoPerder.play()
 
-        await Swal.fire({
-                icon: 'error',
-                iconColor: '#f00',
-                color: '#000',
-                title: 'INCORRECTO',
-                text: `La respuesta es ${objPregunta.respuesta}`,
-                timer: '2000',
-                showConfirmButton: false,
-                background: '#ffaaaa'
+        Swal.fire({
+            icon: 'error',
+            iconColor: '#f00',
+            color: '#000',
+            title: 'INCORRECTO',
+            text: `La respuesta es ${objPregunta.respuesta}`,
+            timer: '2000',
+            showConfirmButton: false,
+            background: '#ffaaaa'
         })  
     
-        cargarPregunta() 
+        setTimeout('cargarPregunta()',2000)
+         
     }  
 }
 
@@ -238,7 +239,6 @@ function restarTiempo(){
 function mostrarPuntajeFinal(){
     return puntos.innerHTML =` JUGADOR: ${usuario.value} -- PUNTOS: ${puntaje} `   
 }
-
 
 function guardarPuntos(puntos,usuario){
 
